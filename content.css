@@ -1,0 +1,163 @@
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-image: url("images/Layer.jpg");
+  background-color: rgba(17, 17, 17, 0.5);
+  background-position: center;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+  margin: 0, auto;
+}
+.text-container {
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+.text-content {
+  width: 70%;
+}
+.text-content h1 {
+  margin-bottom: 50px;
+}
+.text-content p {
+  font-family: Nunito;
+}
+.text-container {
+  text-align: center;
+}
+.price-container {
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.price {
+  background-color: rgba(0, 0, 0, 0.158); /* Light background color */
+  border: 1px solid rgba(226, 223, 223, 0.473); /* Slightly darker border */
+  border-radius: 5px;
+  padding: 20px;
+  width: 20%;
+  box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.3); /* Soft white shadow */
+  transition: transform 0.3s;
+}
+.price:hover {
+  transform: scale(1.05); /* Scale up the price box to 105% */
+  transition: transform 0.3s; /* Smooth transition on hover */
+}
+.price-title {
+  display: flex;
+  justify-content: center;
+}
+.service-content {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  color: white; /* Keep the text color */
+}
+
+.service-content li {
+  padding: 5px; /* Keep some space between items */
+  text-align: left; /* Align text to the left */
+}
+
+.price-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: white; /* Title to match the given color */
+}
+
+.price p {
+  /* Set price text color */
+  margin: 0; /* Remove default margin */
+}
+
+.price-tag {
+  color: white; /* Price tag should remain white */
+  font-size: 1rem; /* Font size for price tag */
+  font-weight: bold; /* Make the text bold */
+  margin: 0; /* Remove default margin */
+  font-style: italic; /* Italicize the text */
+
+  display: inline-block; /* Ensure it behaves like an inline element with block behavior */
+  padding-bottom: 5px; /* Add spacing below the text */
+  /* Dotted underline */
+}
+
+.main-content {
+  justify-self: start;
+  margin-left: 20px;
+  color: var(--white);
+  width: 80%;
+}
+.main-content h1 {
+  font-size: 1rem;
+}
+.main-content p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+.main-btn {
+  font-size: 1rem;
+  background-color: var(--brightred);
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  color: var(--white);
+  margin-top: 2rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.35s;
+  outline: none;
+}
+.main-btn a {
+  position: relative;
+  z-index: 2;
+  color: var(--white);
+  text-decoration: none;
+}
+.main-btn:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  transition: all 0.35s;
+  border-radius: 4px;
+  background: var(--lightblue);
+}
+.main-btn:hover {
+  color: var(--white);
+}
+.main-btn:hover:after {
+  width: 100%;
+}
+.map {
+  margin-top: 400px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
